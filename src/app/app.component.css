@@ -1,0 +1,65 @@
+mat-sidenav-container {
+    height: 100%;
+}
+
+.Page {
+    padding: 15px;
+}
+
+mat-sidenav {
+    padding: 40px 40px 40px 0px;
+    background-color: burlywood;
+}
+
+#sidenavButton {
+    padding: 10px 0px 0px 0px;
+}
+
+#toggleSidenav {
+    border: none;
+    padding: 5px 10px 5px 5px;
+    background-color: burlywood;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+a {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
