@@ -14,7 +14,7 @@
   <mat-sidenav-content>
     <div id="sidenavButton">
       <button id="toggleSidenav" (click)="opened=!opened">
-        <i class="arrow right"></i>
+        <app-toggle-sidenav [direction]="opened"></app-toggle-sidenav>
       </button>
     </div>
     <div id="projects" class="Page">
