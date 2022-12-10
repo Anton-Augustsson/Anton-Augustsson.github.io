@@ -13,6 +13,7 @@ import { HomelabComponent } from './homelab/homelab.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { AboutComponent } from './about/about.component';
 import { ToggleSidenavComponent } from './toggle-sidenav/toggle-sidenav.component';
+import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'project-portfolio', pathMatch: 'full' },
@@ -33,7 +34,8 @@ const routes: Routes = [
     HomelabComponent,
     HobbiesComponent,
     AboutComponent,
-    ToggleSidenavComponent
+    ToggleSidenavComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+article {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-content {
+    display: flex; /* or inline-flex */
+    justify-content: space-between;
+    width: 500px;
+}
+
+.project-info {
+    width: 230px;
+}
+
+.project-name {
+    text-decoration: none;
+    color: green;
+}
+
+.project-image {
+    height: 200px;
+    width: 270px;
+}
+
+img {
+    height: 200px;
+    max-width: 250px;
+}
+
+a {
+    color: black;
+}
