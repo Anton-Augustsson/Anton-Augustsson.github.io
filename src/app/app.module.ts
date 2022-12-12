@@ -14,6 +14,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import { AboutComponent } from './about/about.component';
 import { ToggleSidenavComponent } from './toggle-sidenav/toggle-sidenav.component';
 import { ProjectComponent } from './project/project.component';
+import { ProjectPortfolioHeaderComponent } from './project-portfolio-header/project-portfolio-header.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'project-portfolio', pathMatch: 'full' },
@@ -35,7 +36,8 @@ const routes: Routes = [
     HobbiesComponent,
     AboutComponent,
     ToggleSidenavComponent,
-    ProjectComponent
+    ProjectComponent,
+    ProjectPortfolioHeaderComponent
   ],
   imports: [
     BrowserModule,

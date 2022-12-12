@@ -6,9 +6,11 @@ article {
     display: flex; /* or inline-flex */
     justify-content: space-between;
     width: 500px;
+    min-height: 200px;
 }
 
 .project-info {
+    padding: 20px;
     width: 230px;
 }
 
@@ -17,8 +19,11 @@ article {
     color: green;
 }
 
+.project-desc {
+    padding: 5px 0px 0px 0px;
+}
+
 .project-image {
-    height: 200px;
     width: 270px;
 }
 
@@ -29,4 +34,25 @@ img {
 
 a {
     color: black;
+}
+
+@media screen and (max-width: 510px) {
+    .project-content {
+        width: 300px;
+        min-height: 260px;
+    }
+
+    .project-info {
+        padding: 5px;
+        width: 120px;
+    }
+
+
+    .project-image {
+        width: 180px;
+    }
+
+    img {
+        max-width: 160px;
+    }
 }

@@ -2,10 +2,6 @@ mat-sidenav-container {
     height: 100%;
 }
 
-.Page {
-    padding: 15px;
-}
-
 mat-sidenav {
     padding: 40px 40px 40px 0px;
     background-color: burlywood;
@@ -35,4 +31,9 @@ ul {
 
 li {
     padding: 10px;
+}
+
+
+#sidenavButton {
+    position: fixed;
 }
