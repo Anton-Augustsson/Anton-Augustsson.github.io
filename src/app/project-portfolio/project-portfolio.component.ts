@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
+import { Project } from '../project/project-interface';
 
-interface Project {
-  href: string;
-  image: string;
-  image_desc: string;
-  name: string;
-  desc: string;
-}
+
 @Component({
   selector: 'app-project-portfolio',
   templateUrl: './project-portfolio.component.html',
