@@ -1,8 +1,24 @@
-
 header {
     background-color: antiquewhite;
-    padding: 100px;
+}
+
+h1 {
     margin: 0px;
+    padding: 100px;
     display: flex;
     justify-content: center;
+
 }
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+a {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+}
+
