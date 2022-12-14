@@ -77,6 +77,18 @@ export class ProjectPortfolioComponent implements AfterViewInit{
   constructor(private el: ElementRef, private renderer:Renderer2) {}
 
   ngAfterViewInit() {
+    this.create_project(this.aatts);
+    this.create_project(this.samarit);
+    this.create_project(this.the_flying_dutchman);
+    this.create_project(this.aadwm);
+    this.create_project(this.dwm_bar);
+    this.create_project(this.jdes);
+    this.create_project(this.install_scrip);
+    this.create_project(this.fan_controller);
+    this.create_project(this.arduino_farm);
+  }
+
+  create_project(proj: Project) {
     const project_article = this.renderer.createElement('article');
     const project_div_content = this.renderer.createElement('div');
     const project_a_href = this.renderer.createElement('a');
@@ -86,8 +98,8 @@ export class ProjectPortfolioComponent implements AfterViewInit{
     const project_h3_name = this.renderer.createElement('h3');
     const project_p_desc = this.renderer.createElement('p');
 
-    const project_name_txt = this.renderer.createText(this.aatts.name);
-    const project_desc_txt = this.renderer.createText(this.aatts.desc);
+    const project_name_txt = this.renderer.createText(proj.name);
+    const project_desc_txt = this.renderer.createText(proj.desc);
 
     this.renderer.addClass(project_article, "project-article");
     this.renderer.addClass(project_div_content, "project-content");
@@ -96,9 +108,9 @@ export class ProjectPortfolioComponent implements AfterViewInit{
     this.renderer.addClass(project_h3_name, "project-name");
     this.renderer.addClass(project_p_desc, "project-desc");
 
-    this.renderer.setAttribute(project_a_href, "href", `${this.aatts.href}`);
-    this.renderer.setAttribute(project_img, "src", `${this.aatts.image}`);
-    this.renderer.setAttribute(project_img, "alt", `${this.aatts.image_desc}`);
+    this.renderer.setAttribute(project_a_href, "href", `${proj.href}`);
+    this.renderer.setAttribute(project_img, "src", `${proj.image}`);
+    this.renderer.setAttribute(project_img, "alt", `${proj.image_desc}`);
 
     this.renderer.appendChild(project_h3_name, project_name_txt);
     this.renderer.appendChild(project_p_desc, project_desc_txt);
@@ -113,32 +125,4 @@ export class ProjectPortfolioComponent implements AfterViewInit{
 
     this.renderer.appendChild(this.divProjects.nativeElement, project_article);
   }
-
-  create_project() {
-
-  }
 }
-//<article class="project-article">
-//  <div class="project-content">
-//    <a href={{project_href}}>
-//      <div class="project-image">
-//        <img src={{project_image}} alt={{project_image_desc}}> 
-//      </div>
-//    </a>
-//    <div class="project-info">
-//      <h3 class="project-name">{{project_name}}</h3>
-//      <p class="project-desc">{{project_desc}}</p>
-//    </div>
-//  </div>
-//</article>
-//<div class="projects">
-//  <app-project project_href={{aatts.href}} project_image={{aatts.image}} project_image_desc={{aatts.image_desc}} project_name={{aatts.name}} project_desc={{aatts.desc}}></app-project>
-//  <app-project project_href={{samarit.href}} project_image={{samarit.image}} project_image_desc={{samarit.image_desc}} project_name={{samarit.name}} project_desc={{samarit.desc}}></app-project>
-//  <app-project project_href={{the_flying_dutchman.href}} project_image={{the_flying_dutchman.image}} project_image_desc={{the_flying_dutchman.image_desc}} project_name={{the_flying_dutchman.name}} project_desc={{the_flying_dutchman.desc}}></app-project>
-//  <app-project project_href={{aadwm.href}} project_image={{aadwm.image}} project_image_desc={{aadwm.image_desc}} project_name={{aadwm.name}} project_desc={{aadwm.desc}}></app-project>
-//  <app-project project_href={{dwm_bar.href}} project_image={{dwm_bar.image}} project_image_desc={{dwm_bar.image_desc}} project_name={{dwm_bar.name}} project_desc={{dwm_bar.desc}}></app-project>
-//  <app-project project_href={{jdes.href}} project_image={{jdes.image}} project_image_desc={{jdes.image_desc}} project_name={{jdes.name}} project_desc={{jdes.desc}}></app-project>
-//  <app-project project_href={{install_scrip.href}} project_image={{install_scrip.image}} project_image_desc={{install_scrip.image_desc}} project_name={{install_scrip.name}} project_desc={{install_scrip.desc}}></app-project>
-//  <app-project project_href={{fan_controller.href}} project_image={{fan_controller.image}} project_image_desc={{fan_controller.image_desc}} project_name={{fan_controller.name}} project_desc={{fan_controller.desc}}></app-project>
-//  <app-project project_href={{arduino_farm.href}} project_image={{arduino_farm.image}} project_image_desc={{arduino_farm.image_desc}} project_name={{arduino_farm.name}} project_desc={{arduino_farm.desc}}></app-project>
-//</div>
