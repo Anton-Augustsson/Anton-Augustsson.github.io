@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { ToggleSidenavComponent } from './toggle-sidenav/toggle-sidenav.component';
 import { ProjectComponent } from './project/project.component';
 import { ProjectPortfolioHeaderComponent } from './project-portfolio-header/project-portfolio-header.component';
+import { ProjectCardDirective } from './Directives/project-card.directive';
 
 const routes: Routes = [
   { path: '', redirectTo: 'project-portfolio', pathMatch: 'full' },
@@ -37,7 +38,8 @@ const routes: Routes = [
     AboutComponent,
     ToggleSidenavComponent,
     ProjectComponent,
-    ProjectPortfolioHeaderComponent
+    ProjectPortfolioHeaderComponent,
+    ProjectCardDirective
   ],
   imports: [
     BrowserModule,
