@@ -22,3 +22,10 @@ a {
     width: 40px;
 }
 
+.social-media-icon {
+    filter: opacity(60%)
+}
+
+.social-media-icon:hover {
+    filter: opacity(100%)
+}

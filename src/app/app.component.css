@@ -3,18 +3,29 @@ mat-sidenav-container {
 }
 
 mat-sidenav {
-    padding: 40px 40px 40px 0px;
-    background-color: burlywood;
+    background-color: #0D5891;
 }
 
+mat-sidenav-content {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#projects {
+    height: 100%;
+    width: 100%;
+}
+
+
 #sidenavButton {
-    padding: 10px 0px 0px 0px;
+    padding-top: 10px;
 }
 
 #toggleSidenav {
     border: none;
     padding: 5px 10px 5px 5px;
-    background-color: burlywood;
+    background-color: #0D5891;
     border-top-left-radius: 0rem;
     border-bottom-left-radius: 0rem;
     border-top-right-radius: 1rem;
@@ -22,18 +33,23 @@ mat-sidenav {
 }
 
 a {
-    color: black;
+    text-decoration: none;
+    color: white;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
-
-li {
-    padding: 10px;
-}
-
 
 #sidenavButton {
     position: fixed;
+}
+
+.sidenavItem {
+    padding: 15px 30px 15px 30px;
+}
+
+.sidenavItem:hover {
+    background-color: #2F3034;
 }

@@ -15,15 +15,16 @@ import { AboutComponent } from './about/about.component';
 import { ToggleSidenavComponent } from './toggle-sidenav/toggle-sidenav.component';
 import { ProjectComponent } from './project/project.component';
 import { ProjectPortfolioHeaderComponent } from './project-portfolio-header/project-portfolio-header.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'project-portfolio', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'project-portfolio', component: ProjectPortfolioComponent },
   { path: 'cad-project-portfolio', component: CadProjectPortfolioComponent },
   { path: 'setup', component: SetupComponent },
   { path: 'homelab', component: HomelabComponent },
   { path: 'hobbies', component: HobbiesComponent },
-  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({
@@ -37,7 +38,8 @@ const routes: Routes = [
     AboutComponent,
     ToggleSidenavComponent,
     ProjectComponent,
-    ProjectPortfolioHeaderComponent
+    ProjectPortfolioHeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

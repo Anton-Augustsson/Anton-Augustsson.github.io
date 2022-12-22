@@ -1,0 +1,78 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#home-page {
+    background-color: #0D5891;
+  /* The image used */
+  background-image: url("/assets/snow-mountain.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#info {
+    padding: 43% 0% 10% 30%;
+}
+
+#first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 50%;
+}
+
+a {
+    padding-left: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+#second-row {
+    width: 50%;
+    padding-left: 30px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+p {
+    font-size: large;
+}
+
+@media screen and (max-width: 700px) {
+
+    #info {
+        padding-left: 15%;
+    }
+
+    #first-row {
+        width: 80%;
+    }
+
+    #second-row {
+        width: 80%;
+        padding-left: 10px;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small;
+    }
+}
