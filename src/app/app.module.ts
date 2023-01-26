@@ -16,6 +16,7 @@ import { ToggleSidenavComponent } from './toggle-sidenav/toggle-sidenav.componen
 import { ProjectComponent } from './project/project.component';
 import { ProjectPortfolioHeaderComponent } from './project-portfolio-header/project-portfolio-header.component';
 import { HomeComponent } from './home/home.component';
+import { EquipmentComponent } from './equipment/equipment.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -39,7 +40,8 @@ const routes: Routes = [
     ToggleSidenavComponent,
     ProjectComponent,
     ProjectPortfolioHeaderComponent,
-    HomeComponent
+    HomeComponent,
+    EquipmentComponent
   ],
   imports: [
     BrowserModule,
